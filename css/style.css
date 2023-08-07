@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font: 62.5% / 1.5 'Times New Roman', Times, serif;
+  color: rgb(48, 47, 47);
+}
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: rgb(48, 47, 47);
+}
+nav a {
+  text-transform: uppercase;
+}
+img {
+  width: 100%;
+}
+h1 {
+  /* color: white; */
+  /* padding-top: 10%; */
+  font-size: 3rem;
+  font-weight: lighter;
+}
+p {
+  /* color: white; */
+}
+a.btn {
+  color: white;
+  width: 100%;
+}
+.boxes p, .boxes h3, .boxes i {
+  color: #000;
+  font-size: 1rem;
+  margin: 5%;
+  padding: 30% auto;
+  text-align: center;
+}
+.boxes p{
+  padding-left: 0;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+  /* background-image: url("assets/french-bulldogs-front-white-background_87557-20964.avif");
+  background-repeat: no-repeat;
+  background-size: 100% 70vh;
+  width: 100%;
+  padding-left: 10%; */
+  /* overflow: hidden; */
+}
+.btn {
+  width: 15%;
+  margin: 0 0 5% 0;
+  background-color: black;
+  color: white;
+  padding: 1% 2%;
+  font-size: 1rem;
+}
+aside {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  font-size: 1.2rem;
+  color: white;
+}
+
+aside span{
+  font-size: 1.3rem;
+}
+aside a {
+  background-color: white;
+  color: black;
+  padding: 5%;
+}
+.container {
+  margin: 2% 10%
+}
+.boxes {
+  float: left;
+  width: 33.33%;
+  height: 25vh;
+  text-align: center;
+}
+.momentum {
+  background-color: lightgray;
+  width: 100%;
+  padding: 0 10%;
+}
+.momentum * {
+  width: 50%;
+  font-size: 1.3rem;
+  color: rgb(48, 47, 47);
+}
+.momentum img, .momentum section {
+  float: left;
+  padding: 1%;
+}
+.momentum h2{
+  width: 100%;
+}
+.gallery {
+  clear: both;
+  padding-left: 10%;
+  float: left;
+  position:relative;
+  top: 0;
+}
+.gallery img {
+  width: 25%;
+  margin: 1.5%;
+}
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
