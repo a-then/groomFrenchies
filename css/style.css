@@ -24,12 +24,11 @@
 /*******************************************/
 
 body {
-  font: 62.5% / 1.5 'Times New Roman', Times, serif;
+  font: 62.5% / 1.5 'Arial', 'sans-serif';
   color: rgb(48, 47, 47);
 }
 .logo {
   font-family: 'Dancing Script', cursive;
-  font-size: 3rem;
   font-weight: bold;
 }
 a {
@@ -38,23 +37,31 @@ a {
 }
 nav a {
   text-transform: uppercase;
+  font-size: 1rem;
 }
-img {
+/* img {
   width: 100%;
-}
+} */
 h1 {
   /* color: white; */
   /* padding-top: 10%; */
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: lighter;
 }
+h2 {
+  font-size: 2rem;
+}
 p {
-  /* color: white; */
+  font-size: 1.5rem;
 }
 a.btn {
+  background-color: black;
   color: white;
-  width: 100%;
+  padding: 4% 6%;
+  font-size: 1rem;
+  width: 30%;
 }
+
 .boxes p, .boxes h3, .boxes i {
   color: #000;
   font-size: 1rem;
@@ -68,10 +75,11 @@ a.btn {
 /******************************************
 /* LAYOUT
 /*******************************************/
-.logo{
+header .logo{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 3rem;
   margin: 2rem auto;
 }
 nav {
@@ -85,78 +93,94 @@ main {
   display: flex;
   justify-content: space-evenly;
   color: black;
-  /* background-image: url("assets/french-bulldogs-front-white-background_87557-20964.avif");
-  background-repeat: no-repeat;
-  background-size: 100% 70vh;
-  width: 100%;
-  padding-left: 10%; */
-  /* overflow: hidden; */
+  margin-bottom: 5%;
 }
-.btn {
-  width: 15%;
-  margin: 0 0 5% 0;
-  background-color: black;
-  color: white;
-  padding: 1% 2%;
-  font-size: 1rem;
-}
-aside {
+.mainSection {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: black;
-  font-size: 1.2rem;
-  color: white;
 }
-
-aside span{
-  font-size: 1.3rem;
-}
-aside a {
-  background-color: white;
-  color: black;
-  padding: 5%;
-}
+.hero {
+  width: 100%;
+} 
 .container {
-  margin: 2% 10%
+  margin: 0 10%;
+}
+.sectionHeight {
+  height: 90vh;
+}
+.servicesContainer {
+  display: flex;
+  justify-content:space-evenly;
+  margin: 0 2rem 5rem;
 }
 .boxes {
-  float: left;
-  width: 33.33%;
-  height: 25vh;
+  text-align: center;
+  padding: 0 1%;
+}
+.servicesContainer > i {
   text-align: center;
 }
-.momentum {
-  background-color: lightgray;
-  width: 100%;
-  padding: 0 10%;
+/* TO-DO
+Background image not showing 
+*/
+
+#aboutUs{
+  background: lightgray url("/Users/athen/Desktop/100devs/portfolio-2023/groomServ/assets/grooming.jpeg") no-repeat center center fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  padding: 5%;
 }
-.momentum * {
-  width: 50%;
-  font-size: 1.3rem;
-  color: rgb(48, 47, 47);
-}
-.momentum img, .momentum section {
-  float: left;
-  padding: 1%;
-}
-.momentum h2{
-  width: 100%;
+#lookbook{
+  margin: 2% 0;
+  padding: 2.5% 5%; 
+  /* background-color: lightgrey; */
 }
 .gallery {
-  clear: both;
-  padding-left: 10%;
-  float: left;
-  position:relative;
-  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
 }
 .gallery img {
-  width: 25%;
-  margin: 1.5%;
+  width: 33.33%;
+  /* padding: 1%; */
 }
 footer {
-
+  background: black;
+  color: white;
+  padding: 5% 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:flex-start;
+  font-size: 1rem;
+}
+footer .logo{
+  font-size: 2rem;
+  margin-bottom: 5%;
+  
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+.discountBanner {
+  text-align: center;
+  padding: 0.5%;
+  margin-top: 1%;
+  background-color: #ffcc00;
+  font-size: 1rem;
+  /* color: white; */
+}
+.discountBanner p {
+  margin: 0;
+}
+#backTop {
+  font-size: 3rem;
+  border: 1px solid black;
+  border-radius: 100px;
+  padding: 1%;
+  background: white;
+}
