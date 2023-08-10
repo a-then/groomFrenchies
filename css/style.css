@@ -128,7 +128,7 @@ Background image not showing
 */
 
 #aboutUs{
-  background: lightgray url("/Users/athen/Desktop/100devs/portfolio-2023/groomServ/assets/grooming.jpeg") no-repeat center center fixed;
+  background: url("/assets/grooming.jpeg") center no-repeat;
   display: flex;
   flex-direction: column;
   justify-content:space-evenly;
