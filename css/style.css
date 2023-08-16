@@ -123,12 +123,10 @@ main {
 .servicesContainer > i {
   text-align: center;
 }
-/* TO-DO
-Background image not showing 
-*/
 
 #aboutUs{
   background: url("/assets/grooming.jpeg") center no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content:space-evenly;
