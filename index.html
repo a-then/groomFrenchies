@@ -17,52 +17,48 @@
 </head>
 
 <body>
-	<header>
-		<span class="logo">Pet Pretty</span>
-		<nav>
-			<a href="#services">Services</a>
-			<a href="#aboutUs">About Us</a>
-			<a href="#lookbook">Lookbook</a>
-			<a href="#contact">Contact</a>
-			<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-			<a href="#"><i class="fa-solid fa-cart-shopping"></i></a>	
-		</nav>
-		<aside class="discountBanner">
-			<p>Get 20% off on your first visit!</p>
-		</aside>
-	</header>
 	<div class="container"> <!--for styling purposes-->
-		<main class="sectionHeight">
-			<section class="mainSection">
-				<h1>Welcome to Pet Pretty!</h1>
-				<p>
-					We specialize in providing top-notch grooming services for French Bulldogs to keep them looking
-					their best.
-				</p>
-				<div class="btn">
-					<a class="btn" href="#services">Our Services</a>
-				</div>
-			</section>
-			<section class="mainImg">
-				<img class="hero" src="assets/french-bulldogs-front-white-background_87557-20964.avif"
-					alt="three french bulldogs looking cute">
-			</section>
+		<header>
+			<span class="logo">Pet Pretty</span>
+			<nav>
+				<a href="#services">Services</a>
+				<a href="#aboutUs">About Us</a>
+				<a href="#lookbook">Lookbook</a>
+				<a href="#contact">Contact</a>
+				<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+				<a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+			</nav>
+			<aside class="discountBanner">
+				<p>Get 20% off on your first visit!</p>
+			</aside>
+		</header>
+		<main>
+			<h1 class="mainSection">Welcome to Pet Pretty!</h1>
+			<p class="mainSection">
+				We specialize in providing top-notch grooming services for French Bulldogs to keep them looking
+				their best.
+			</p>
+			<a class="btn" href="#services">Our Services</a>
+			<img class="hero" src="assets/french-bulldogs-front-white-background_87557-20964.avif"
+				alt="three french bulldogs looking cute">
+
 		</main>
-		
+
 		<section id="aboutUs" class="sectionHeight">
-				<h2>
-					Let us take care of your fur baby!
-				</h2>
-				<p>Sure, you can do it yourself at home and it will never be the same as having professionals grooming
-					your frenchie.</p>
-				<p>Our team of dedicated specialists have been working with Dog Show's French Bulldogs for more than 10
-					years so you know your frenchie will be in good hands.</p>
-					<div class="btn">
-						<a class="btn" href="#">Book Online</a>
-					</div>
+			<h2>
+				Let us take care of your fur baby!
+			</h2>
+			<p>Sure, you can do it yourself at home and it will never be the same as having professionals grooming
+				your frenchie.</p>
+			<p>Our team of dedicated specialists have been working with Dog Show's French Bulldogs for more than 10
+				years so you know your frenchie will be in good hands.</p>
+			
+				<a class="btn" href="#">Book Online</a>
+			
 			<!-- <img class="subHeroImage" src="assets/grooming.jpeg" alt=""> -->
 		</section>
 		<section id="services" class="sectionHeight servicesContainer">
+			<h2>Our Services</h2>
 			<section class="boxes">
 				<i class="fa-solid fa-users-line fa-xl"></i>
 				<h3>Bath</h3>
@@ -78,7 +74,7 @@
 				<h3>Hair Trim</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.</p>
 			</section>
-			
+
 			<section class="boxes">
 				<i class="fa-solid fa-hand-holding-heart fa-xl"></i>
 				<h3>Hair Dye</h3>
@@ -91,28 +87,41 @@
 			</section>
 		</section>
 		<section id="lookbook" class="sectionHeight">
-			<h2>OUR LOOKBOOK</h2>
+			<h2>Lookbook</h2>
 			<div class="gallery">
-				<img src="assets/french-bulldog-grooming-eye-cleaning.jpg" alt="">
-				<img src="assets/shutterstock_169830668-2.jpg" alt="">
-				<img src="assets/french.jpeg" alt="">
-				<img src="assets/briddle.jpg" alt="">
-				<img src="assets/shutterstock_600627056-2.jpg" alt="">
-				<img src="assets/french-bulldog-puppy-isolated_106368-1076.avif" alt="">
+				<div class="column">
+					<img src="assets/french-bulldog-grooming-eye-cleaning.jpg" alt="">
+					<img src="assets/shutterstock_169830668-2.jpg" alt="">
+					<img src="assets/french.jpeg" alt="">
+				</div>
+				<div class="column">
+					<img src="assets/briddle.jpg" alt="">
+					<img src="assets/shutterstock_600627056-2.jpg" alt="">
+					<img src="assets/french-bulldog-puppy-isolated_106368-1076.avif" alt="">
+				</div> 
 			</div>
-			<section id="contact">
-				<h4>Call us now to schedule your next appointment!</h4>
-				<span class="tel">880-956-8452</span>
-			</section>
+
 		</section>
-		<button onclick="topFunction()" id="backTop" title="Go to Top">^</button>
+		<section id="contact" class="sectionHeight">
+			<h2>Call us now to schedule your next appointment!</h2>
+			<span class="tel">Tel: 880-956-8452</span>
+			<p>You can also subscribe to our newsletter to stay in the know about how to best care for your frenchie companion.</p>
+			<form action="">
+				<input type="text" name="name" class="formStyle" placeholder="Name (required)" required />
+				<input type="email" name="email" class="formStyle" placeholder="Email (required)" required />
+				<a href="#" class="btn">Subscribe</a>
+			  </form>
+		</section>
+
+		<button onclick="topFunction()" class="btn" id="backTop" title="Go to Top">^</button>
+
+		<footer>
+			<span class="logo">Pet Pretty</span>
+			<span class="tel">880-956-8452</span>
+			<span class="email">info@petpretty.com</span>
+			<span class="address">3056 French Bullevard, Pretty, NY 1000</span>
+		</footer>
 	</div>
-	<footer>
-		<span class="logo">Pet Pretty</span>
-		<span class="tel">880-956-8452</span>
-		<span class="email">info@petpretty.com</span>
-		<span class="address">3056 French Bullevard, Pretty, NY 1000</span>
-	</footer>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 
