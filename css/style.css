@@ -255,6 +255,9 @@ footer .logo{
   nav {
     display: none;
   }
+  main {
+    display: block;
+  }
   section {
     margin: 2% auto;
   }
